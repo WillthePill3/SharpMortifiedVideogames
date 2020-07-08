@@ -11,11 +11,12 @@ currentFuel=60
 mpg=20
 
 def increaseSpeed(self , speedChange):
-  input(currentspeed +10)
+  self.currentspeed += speedchange
   print("we are going faster")
-  if self.currentspeed > 100:
-   self.currentSpeed -=10
-   print("We are going to fast!")
+  #decrease current fuel by 10
+  #if dont have enough fuel return -1
+  #if yu are going to fast return -2
+  #otherwise return new speed
   else:
    self.currentspeed == self.currentspeed
    self.increaseSpeed + 10
@@ -25,6 +26,10 @@ def increaseSpeed(self , speedChange):
     return -2
   else: 
     return currentspeed + speedChange  
+    print("we are going faster")
+  if self.currentspeed > 100:
+   self.currentSpeed -=10
+   print("We are going to fast!")
     
 
   
